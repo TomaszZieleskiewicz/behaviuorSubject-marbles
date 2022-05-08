@@ -1,0 +1,13 @@
+<ng-container *ngIf="behaviuorSubject$ | async; then trueMsg; else falseMsg">
+</ng-container>
+
+<ng-template #trueMsg>
+    <div>
+        Yeah!
+    </div>
+</ng-template>
+<ng-template #falseMsg>
+    <div>
+        Nope...
+    </div>
+</ng-template>
